@@ -1,0 +1,258 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+header{
+    width: 100%;
+    padding-left: 10px;
+    padding: 8px;
+   background-color: rgb(56, 54, 54);
+   border-radius: 10px;
+   border-bottom: solid 2px aqua;
+   position: sticky;
+   display: flex;
+   justify-content: space-between;
+
+
+}
+
+.logo{
+    filter: drop-shadow(3px 3px black);
+    padding: 3px;
+}
+
+.lista{
+    display: flex;
+    text-align: right;
+    text-decoration: none;
+    margin-right: 8%;
+    gap: 18px;
+    color: white;
+}
+
+li{
+    display: flex;
+    gap: 18px;
+    text-decoration: none;
+    margin-top: 8%;
+    margin-right: 8%;
+
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.area-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.linkedin:hover{
+    transition: 1s;
+    color: rgb(87, 87, 243);
+}
+
+.instagram:hover{
+    transition: 1s;
+    color: rgb(240, 104, 126);
+}
+
+.github:hover{
+    transition: 1s;
+    color: gray;
+}
+
+textarea{
+    resize: none;
+    min-height: 250px;
+    min-width: 500px;
+    border: none;
+    border-radius: 4px;
+   border: solid 2px aquamarine;
+   font-size: 20px;
+}
+
+textarea::placeholder{
+    font-size: 30px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.compilar{
+    background-color: rgba(0, 0, 0);
+    color: white;
+    width: 230px;
+    border: solid 1px aqua;
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    
+}
+
+.compilar:hover{
+    border: solid 1px rgb(29, 241, 125);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.descompilar{
+    background-color: rgba(0, 0, 0);
+    color: white;
+    width: 230px;
+    border: solid 1px aqua;
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.descompilar:hover{
+    border: solid 1px rgb(29, 241, 125);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.container{
+    height: 420px;
+    width: 300px;
+    background-color: white;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    border-radius: 32px;
+    margin-top: -2%;
+    border: solid 2px aqua;
+    
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.img-compilador{
+    padding: 20px;
+}
+
+.nenhum-texto{
+    text-align: center;
+}
+
+.resultado{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copiar{
+    background-color: rgba(0, 0, 0);
+    color: white;
+    width: 100px;
+    border: solid 2px aqua;
+    padding: 15px;
+    cursor: pointer;  
+    margin-left: 12%;
+    position: relative;
+}
+
+.copiar:hover{
+    border: solid 2px rgb(29, 241, 125);
+}
+
+.reiniciar{
+    background-color: rgba(0, 0, 0);
+    color: white;
+    width: 100px;
+    border: solid 2px aqua;
+    padding: 15px;
+    cursor: pointer;  
+    margin-left: 12%;
+    position: relative;
+    margin-right: 8%;
+}
+
+.reiniciar:hover{
+    border: solid 2px rgb(29, 241, 125);
+
+}
+
+footer{
+   background-color: rgb(22, 22, 22);
+   padding: 6px;
+   text-align: center;
+   border-top: solid 2px aqua;
+
+}
+
+@media  (max-width: 1200px) {
+
+    header{
+        width: 100%;
+    }
+
+    main{
+        flex-direction: column;
+        gap: 82px;
+    }
+
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .container{
+        width: 96%;
+        margin-left: 2.5%;
+    }
+
+    .resultado{
+        gap: 32px;
+        
+    }
+
+    .img-compilador{
+        width: 30%;
+        margin-left: 33%;
+    }
+
+    footer{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+

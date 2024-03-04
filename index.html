@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge Alura</title>
+
+</head>
+<body>
+    <header>
+        <img src="imagens/Logo.png" alt="" class="logo">
+        <ul class="lista">
+            <li>
+                <a class="linkedin" href="https://www.linkedin.com/in/gabriel-dantas-50168b230/">LinkedIn</a>
+                <a class="instagram" href="https://www.instagram.com/gabrielcleverton_/">Instagram</a>
+                <a class="github" href="https://github.com/GabrielCleverton">Github</a>
+
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="area-texto">
+        <textarea name="" id="input" cols="30" rows="10" placeholder="Digite aqui..." ></textarea>
+        <div class="aviso">
+        <p>Apenas letras minúsculas e sem acento</p>
+        </div>
+        <div class="botoes">
+            <button onclick="criptografar()" class="compilar" id="criptografia">Criptografar</button>
+            <button onclick="descriptografar()" class="descompilar" id="descriptografia">Descriptografar</button>
+        </div>
+        </section>
+        <section class="container">
+            <div class="conteudo">
+         <img src="imagens/img-resultado.png" alt="" class="img-compilador" id="img-compilador">
+            <strong class="nenhum-texto" id="mensagem">Nenhum texto encontrado</strong>
+           <div class="resultado">
+             <button onclick="copiarMensagem()" class="copiar" id="copiar">Copiar</button>
+            <button onclick="reiniciar()" class="reiniciar" id="reiniciar">Reiniciar</button>
+            </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <h4>Desenvolvido por: Gabriel Cleverton</h2>
+        <strong>Challenge Alura</strong>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
